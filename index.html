@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>VOC标签体系介绍-by Rachel V 0.37</title>
+<title>VOC标签体系介绍-by Rachel V 0.40</title>
 <style>
 :root { --ink:#162e51; --muted:#71829a; --blue:#2563eb; --border:#e2eaf4; --bg:#f8fbff; }
 * { box-sizing:border-box; }
@@ -450,6 +450,10 @@ body { display:flex; flex-direction:column; height:100dvh; -webkit-font-smoothin
 .guide-article .meeting-discussion .meeting-discussion-label { margin:0; font-size:.8125rem; font-weight:650; color:#765b16; }
 .guide-article .meeting-discussion .meeting-discussion-question { font-size:1rem; }
 .guide-article .meeting-discussion strong { color:#5c450e; }
+.meeting-discussion.meeting-discussion-orange { border-color:#efbb8b; border-left-color:#c45b12; background:#fff1e5; color:#713608; }
+.guide-article .meeting-discussion-orange .meeting-discussion-label { color:#92400e; }
+.guide-article .meeting-discussion-orange strong { color:#713608; }
+.guide-article .meeting-discussion-orange .meeting-discussion-question strong { color:#a7470c; }
 @media print { .meeting-discussion { break-inside:avoid; } }
 
 
@@ -501,7 +505,7 @@ body { display:flex; flex-direction:column; height:100dvh; -webkit-font-smoothin
 
 <a class="skip-link" href="#guideBody">跳到正文</a>
 <header class="page-header">
-  <div class="page-brand"><strong>VOC 标签体系介绍</strong><span>by Rachel · V 0.37</span></div>
+  <div class="page-brand"><strong>VOC 标签体系介绍</strong><span>by Rachel · V 0.40</span></div>
   <div class="view-tabs" role="tablist" aria-label="查看内容">
     <button class="view-tab" id="tab-guide" type="button" role="tab" aria-selected="true" aria-controls="guidePanel" tabindex="0">体系说明</button>
     <button class="view-tab" id="tab-map" type="button" role="tab" aria-selected="false" aria-controls="mapPanel" tabindex="-1">咖啡机导图</button>
@@ -524,7 +528,7 @@ body { display:flex; flex-direction:column; height:100dvh; -webkit-font-smoothin
   <article class="guide-article" id="guideBody" tabindex="-1">
    <h1>VOC 标签体系<br>从通用版到品类应用</h1>
    <p class="guide-intro">一条完整评论可能包含产品体验、服务和购买原因等多个评论点。标签体系帮助业务把这些反馈分清楚，找到同类问题。先介绍通用版及持续维护的方法，再用咖啡机说明怎样形成品类正式版。</p>
-   <div class="guide-meta"><span>by Rachel · V 0.37</span></div>
+   <div class="guide-meta"><span>by Rachel · V 0.40</span></div>
 
    <section class="guide-part" id="guide-generic" aria-labelledby="heading-generic"><h2 id="heading-generic">一、通用标签体系：怎么看、怎么用、怎么持续更新</h2><p>先看懂通用版，再了解评论如何打标，以及正式使用后怎样维护。这里介绍各品类共通的规则；实际调整的是当前品类体系，不会自动修改共享通用模板或其他品类。</p><section data-guide-subsection id="guide-layers" aria-labelledby="heading-layers">
 <h3 id="heading-layers">1.1 先认识通用版本</h3>
@@ -757,7 +761,7 @@ body { display:flex; flex-direction:column; height:100dvh; -webkit-font-smoothin
     </tbody></table></div>
    </section><section data-guide-subsection id="guide-adapt" aria-labelledby="heading-adapt">
     <h3 id="heading-adapt">2.2 咖啡机标签体系与通用版有哪些差异？</h3>
-    <p>咖啡机版基于通用版，细化反馈分类，并补齐具体用途和产品体验标签。现有<strong>91个L3、895个有名称的L4</strong>。</p>
+    <p>咖啡机版共有91个L3、895个有名称的L4。与通用版相比，<strong>L3差异占比：45.1%（41个）；L4差异占比：93.5%（837个）</strong>。这里的“差异”指名称或分类路径不同，主要体现在具体用途、品类分类和反馈标签的补充与整理，其中也包含可用于其他品类的通用内容。</p>
     <button type="button" class="guide-map-link" data-open-map>查看完整咖啡机导图</button>
     <div class="table-wrap"><table class="adapt-differences"><caption>用两份标签表中的实际例子看区别</caption><colgroup><col style="width:18%"><col style="width:25%"><col style="width:27%"><col style="width:30%"></colgroup><thead><tr><th scope="col">差异在哪里</th><th scope="col">通用版</th><th scope="col">咖啡机版</th><th scope="col">区别是什么</th></tr></thead><tbody>
       <tr><td data-label="差异在哪里">补齐具体用途<br>（L4）</td><td data-label="通用版">使用目的（L3）<br>L4为空</td><td data-label="咖啡机版">使用目的 → 制作拿铁<br><button type="button" class="guide-map-link" data-map-node="n751">在导图中查看</button></td><td data-label="区别是什么">从只有用途分类，到有具体的“制作拿铁”标签，便于看清消费者买机器用来做什么。</td></tr>
@@ -765,13 +769,18 @@ body { display:flex; flex-direction:column; height:100dvh; -webkit-font-smoothin
       <tr><td data-label="差异在哪里">整理名称和分类</td><td data-label="通用版">具体描述 → 配送未按时到达</td><td data-label="咖啡机版">配送与物流 → 配送延迟</td><td data-label="区别是什么">都在说配送晚到；咖啡机版归入“配送与物流”，标签名称也更简短。</td></tr>
       <tr><td data-label="差异在哪里">补充通用反馈点<br>（L4）</td><td data-label="通用版">没有同名的“噪音水平”L4</td><td data-label="咖啡机版">性能相关 → 噪音水平<br><button type="button" class="guide-map-link" data-map-node="n89">在导图中查看</button></td><td data-label="区别是什么">咖啡机版有明确的噪音标签，可单独汇总相关反馈；这类内容也适用于其他品类。</td></tr>
     </tbody></table></div>
-    <p class="adapt-summary">按咖啡机版数量计算，<strong>41个L3（45.1%）、837个L4（93.5%）</strong>与通用版存在名称或分类路径差异。其中包含通用内容的整理和补充，并非全部是咖啡机特有标签。</p>
+    <aside class="meeting-discussion meeting-discussion-orange" aria-labelledby="coffeeDiscussionTitle">
+     <p class="meeting-discussion-label" id="coffeeDiscussionTitle">业务讨论 · 待确认</p>
+     <p class="meeting-discussion-question"><strong>如何逐步把各品类反复补充、整理的共用内容补进通用版，减少新品类的调整和人工确认，同时保留必要的品类差异？</strong></p>
+     <p><strong>可考虑补进通用版：</strong>“噪音水平”可用于多种有运行噪音的产品；“配送未按时到达”和“配送延迟”表达同一问题，可统一名称和分类。结合其他品类需求、经业务确认后补进通用版，后续新品类就能直接沿用。</p>
+     <p><strong>保留在品类版：</strong>“制作拿铁”“咖啡品质 → 香气表现”描述咖啡的具体用途与体验，由咖啡机等相关品类按需补充。</p>
+    </aside>
    </section></section>
 
    <footer class="guide-footer">
     <p><strong>资料来源：</strong>通用版与咖啡机版Excel、现有咖啡机导图，以及Rachel提供的六张运营建议截图。两表数量已逐项对比；业务性质归类为本次分析判断。月度维护节奏及采纳后的历史、新数据处理规则由Rachel确认。</p>
     <p>文中的评论为讲解用示意，标签来自实际源表。截图反映当时的界面记录，评论数和置信度按原图展示。采纳后的处理方式依据已确认业务规则，截图未提供的逐条执行结果不作推断。</p>
-    <p>VOC标签体系介绍-by Rachel V 0.37 · 2026 年 10 月 12 日</p>
+    <p>VOC标签体系介绍-by Rachel V 0.40 · 2026 年 10 月 12 日</p>
    </footer>
   </article>
  </div>

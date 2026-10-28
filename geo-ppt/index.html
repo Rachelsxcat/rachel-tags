@@ -199,6 +199,26 @@
 .chapter-progress-part.on{background:#e4f1fa;border-color:#a7cde4;color:#2a77a8;font-weight:800}
 .chapter-progress-hint{margin-left:auto;color:#9eb0bd;font-size:12px}
 .chapter-slide .footer{z-index:9}
+
+/* WHO page: two input perspectives -> curated shopping question library */
+.p2-revised .p2-input-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.p2-revised .p2-input-card{background:#fff;border:1px solid #d9e6f1;border-radius:20px;padding:20px 26px 18px;height:211px}
+.p2-revised .p2-input-kicker{font-size:14px;letter-spacing:.4px;color:#3375a5;font-weight:800}
+.p2-revised .p2-input-lead{font-size:16px;color:#66839b;margin-top:9px;font-weight:700}
+.p2-revised .p2-input-card h3{font-size:27px;color:#1c4366;margin:5px 0 8px;line-height:1.2}
+.p2-revised .p2-input-card p{font-size:16px;color:#6b8196;line-height:1.45;margin:0;min-height:46px}
+.p2-revised .p2-input-tags{display:flex;align-items:center;gap:8px;margin-top:8px}
+.p2-revised .p2-input-tags span{font-size:13px;color:#527b99;background:#edf4fa;border-radius:8px;padding:6px 10px}
+.p2-revised .p2-combine{height:60px;display:flex;align-items:center;justify-content:center;gap:14px;color:#5a7e98;font-size:15px;font-weight:700}
+.p2-revised .p2-combine-arrow{font-size:24px;color:#7bacc8;font-weight:800}
+.p2-revised .p2-question-result{background:#f1f7fc;border:1px solid #d6e8f5;border-radius:20px;padding:17px 24px 15px;min-height:223px}
+.p2-revised .p2-result-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:20px}
+.p2-revised .p2-result-header strong{font-size:22px;color:#1d527c}
+.p2-revised .p2-result-header>span{font-size:13px;color:#8a9eb0}
+.p2-revised .p2-result-list{display:flex;flex-direction:column;gap:0}
+.p2-revised .p2-result-row{display:flex;align-items:center;gap:15px;padding:10px 0;border-top:1px solid #dce8f2;color:#234765;font-size:16px;line-height:1.35}
+.p2-revised .p2-result-tag{width:115px;flex:none;color:#2c719e;font-size:14px;font-weight:800}
+.p2-revised .p2-result-note{font-size:12px;color:#8598a9;line-height:1.45;margin-top:8px}
 </style></head><body><div class="viewport"><main id="stage" class="stage" aria-label="Listing GEO HTML演示"><section class="slide active contents-slide" data-index="0" aria-label="第1页：内容导读｜从理解 GEO 到业务应用">
 <header class="top"><div class="brand"><span class="brand-mark">G</span> OEC · AI PRODUCT <span style="font-weight:500;color:#a4b5c2;margin-left:10px">/</span> <span style="font-weight:500;color:#6a8298;letter-spacing:0">Listing & GEO</span></div></header>
 <div class="heading contents-heading"><div class="eyebrow">CONTENTS &nbsp; / &nbsp; 内容导读</div><h1>从理解 GEO，到实际业务应用</h1><p>通过三个问题，了解 GEO Agent 为什么做、怎么实现，以及如何帮助业务。</p></div>
@@ -236,20 +256,21 @@
 <div class="compare"><div class="compare-col"><div class="compare-hd"><strong>传统搜索｜关键词找商品</strong><span class="tag white">Search</span></div><div class="mock-search"><div class="searchbox">⌕ &nbsp;30 inch range hood</div><div class="sr-row"><div class="sr-img">▤</div><div class="bars"><span></span><span></span><span></span></div><span class="mini">$ · ★</span></div><div class="sr-row"><div class="sr-img">▤</div><div class="bars"><span></span><span></span><span></span></div><span class="mini">$ · ★</span></div></div><div class="cmp-bottom"><b>业务关注：</b>标题、属性、搜索匹配、点击和转化</div></div><div class="compare-col" style="border-color:#bfdcec;background:#f9fcff"><div class="compare-hd"><strong>Alexa 购物助手｜自然语言问需求</strong><span class="tag">Alexa for Shopping</span></div><div class="ai-chat">“公寓厨房比较小，不能外接排烟管，适合买什么油烟机？”</div><div class="ai-response"><b>Alexa 回答（示意）</b><br>我会优先比较安装方式、尺寸、噪声和价格，并推荐更符合这些条件的商品……<div style="margin-top:11px;display:flex;gap:8px"><span class="pill">安装限制</span><span class="pill">使用场景</span><span class="pill">产品比较</span></div></div><div class="cmp-bottom"><b>业务关注：</b>Alexa 是否理解商品、是否考虑推荐</div></div></div>
 <div class="insight p1-summary"><div class="lightbulb">✦</div><div><strong>一句话理解</strong>　<span>Listing 是产品信息基础；GEO 进一步关注这些信息能否帮助 Alexa 购物助手回答消费者的问题。</span></div></div>
 </div><footer class="footer"><span class="footer-left">资料依据：Amazon Science、Amazon 官方 Alexa for Shopping 介绍；右侧回答为示意。</span><span class="footer-page">03 / 13</span></footer></section>
-<section class="slide " data-index="3" aria-label="第4页：我们希望 Alexa 购物助手向谁推荐什么产品？"><header class="top"><div class="brand"><span class="brand-mark">G</span> OEC · AI PRODUCT <span style="font-weight:500;color:#a4b5c2;margin-left:10px">/</span> <span style="font-weight:500;color:#6a8298;letter-spacing:0">Listing & GEO</span></div></header><div class="heading"><div class="eyebrow">04 &nbsp; / &nbsp; WHO · 购物场景</div><h1>我们希望 Alexa 购物助手向谁推荐什么产品？</h1><p>先结合品牌目标与消费者需求线索，建立有依据的 GEO 购物问题库。</p></div><div class="content">
-<span class="p2-case-tag">演示产品｜COMFEE 30 寸油烟机</span><div class="audiences"><div class="persona"><div class="persona-label">01 · 卖家目标人群</div><h3>租房／公寓年轻人</h3><div class="desc">品牌希望突出：小厨房也能使用、安装限制少、适合日常烹饪。</div><div class="chips"><span>小户型</span><span>免排管诉求</span><span>安装便利</span></div></div><div class="down-center">⇄</div><div class="persona"><div class="persona-label">02 · 消费者需求线索</div><h3>老房厨房换新</h3><div class="desc">例如从搜索词、评论与问答中发现：尺寸匹配、原有管道能否继续使用。</div><div class="chips"><span>开孔尺寸</span><span>排烟方式</span><span>噪声</span></div></div></div>
-<div class="qbox p2-qbox"><div class="qbox-title">03 · 多种需求线索 → 建立 GEO 购物问题库</div>
-<div class="p2-source-grid">
-<div class="p2-source"><strong>搜索与广告词</strong><span>ABA / 广告搜索词</span></div>
-<div class="p2-source"><strong>消费者反馈</strong><span>VOC / 买家问答</span></div>
-<div class="p2-source"><strong>AI 广告 Prompts</strong><span>AI 生成问题及互动</span></div>
-<div class="p2-source"><strong>Alexa 建议追问</strong><span>可延伸的相关问题</span></div>
+<section class="slide " data-index="3" aria-label="第4页：我们希望 Alexa 购物助手向谁推荐什么产品？"><header class="top"><div class="brand"><span class="brand-mark">G</span> OEC · AI PRODUCT <span style="font-weight:500;color:#a4b5c2;margin-left:10px">/</span> <span style="font-weight:500;color:#6a8298;letter-spacing:0">Listing & GEO</span></div></header><div class="heading"><div class="eyebrow">04 &nbsp; / &nbsp; WHO · 购物场景</div><h1>我们希望 Alexa 购物助手向谁推荐什么产品？</h1><p>从品牌卖家的目标和消费者真实需求出发，整理出值得向 Alexa 测试的购物问题。</p></div><div class="content p2-revised"><span class="p2-case-tag">演示产品｜COMFEE 30 寸油烟机</span>
+<div class="p2-input-grid">
+  <div class="p2-input-card"><div class="p2-input-kicker">输入 A · 业务目标</div><div class="p2-input-lead">品牌卖家</div><h3>租房 / 公寓年轻人</h3><p>希望覆盖小厨房、安装受限等场景，突出商品真实且适用的卖点。</p><div class="p2-input-tags"><span>小户型</span><span>排烟限制</span><span>安装便利</span></div></div>
+  <div class="p2-input-card"><div class="p2-input-kicker">输入 B · 消费者需求</div><div class="p2-input-lead">消费者实际关注什么？</div><h3>老房厨房换新</h3><p>从搜索、评论与问答中，发现尺寸匹配、排烟方式及噪音等需求。</p><div class="p2-input-tags"><span>开孔尺寸</span><span>排烟方式</span><span>噪音</span></div></div>
 </div>
-<div class="p2-source-flow"><b>问题库整理</b><span>提炼场景 · 分类去重 · 选择测试问题</span></div>
-<div class="p2-query-list"><div class="queryitem"><label>问题 A</label><div>“公寓不能外接排烟管，有什么适合小厨房的油烟机？”</div></div><div class="queryitem"><label>问题 B</label><div>“老房厨房换油烟机，哪些产品适合原有开孔尺寸？”</div></div></div></div>
-
-</div><footer class="footer"><span class="footer-left">示例场景与问题均为演示；AI 广告 Prompts 是 AI 生成的问题，不等同于真实用户主动提问。</span><span class="footer-page">04 / 13</span></footer></section>
-<section class="slide chapter-slide" data-index="4" data-chapter="2" aria-label="第5页：章节02｜GEO 是怎么实现的？">
+<div class="p2-combine"><span class="p2-combine-arrow">↓</span><span>汇总需求线索　·　归类去重　·　核实产品能力　·　确定测试问题</span><span class="p2-combine-arrow">↓</span></div>
+<div class="p2-question-result">
+  <div class="p2-result-header"><strong>最终产出 · GEO 购物问题库</strong><span>按场景分类，作为后续 Alexa 测试的输入</span></div>
+  <div class="p2-result-list">
+    <div class="p2-result-row"><span class="p2-result-tag">场景推荐 A</span><span>公寓不能外接排烟管，有什么适合小厨房的油烟机？</span></div>
+    <div class="p2-result-row"><span class="p2-result-tag">场景推荐 B</span><span>老房更换油烟机，哪些型号适合原有开孔尺寸？</span></div>
+    <div class="p2-result-row"><span class="p2-result-tag">产品问答 C</span><span>这款 COMFEE 油烟机支持免排管安装吗？</span></div>
+  </div>
+  <div class="p2-result-note">问题线索可来自 ABA、广告搜索词、VOC、买家问答、AI 广告 Prompts、Alexa 建议问题等；AI 生成建议问题不等于消费者真实提问，产品能力需核实。</div>
+</div></div><footer class="footer"><span class="footer-left">演示问题不代表真实用户直接输入或已验证产品支持；后续需结合产品参数核对。</span><span class="footer-page">04 / 13</span></footer></section><section class="slide chapter-slide" data-index="4" data-chapter="2" aria-label="第5页：章节02｜GEO 是怎么实现的？">
 <header class="top"><div class="brand"><span class="brand-mark">G</span> OEC · AI PRODUCT <span style="font-weight:500;color:#a4b5c2;margin-left:10px">/</span> <span style="font-weight:500;color:#6a8298;letter-spacing:0">Listing & GEO</span></div></header>
 <div class="chapter-content">
   <div class="chapter-overline">PART 02 &nbsp; / &nbsp; 章节导读</div>

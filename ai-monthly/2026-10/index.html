@@ -178,7 +178,7 @@
 <div class="app">
   <header class="toolbar">
     <div class="brand"><span class="brand-mark"></span><h1>OEC-AI产品进度说明-10月</h1><span class="edition">阶段稿 · P1—P7</span></div>
-    <div class="toolbar-right"><span class="smallmuted">键盘 ← → 切换页面</span><button class="control" id="printbtn" type="button" title="使用浏览器打印并另存为PDF">打印 / 导出PDF</button><button class="control" id="fullbtn" type="button" title="全屏演示">⛶ 全屏</button></div>
+    <div class="toolbar-right"><button class="control" id="fullbtn" type="button" title="全屏演示">⛶ 全屏</button></div>
   </header>
   <main class="stage-region" id="stage">
     <div class="slide-shell" id="shell">
@@ -458,7 +458,6 @@
   prev.addEventListener('click',()=>show(current-1));next.addEventListener('click',()=>show(current+1));
   window.addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(current+1)}else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(current-1)}else if(e.key==='Home'){show(0)}else if(e.key==='End'){show(slides.length-1)}});
   window.addEventListener('resize',fit);
-  document.querySelector('#printbtn').addEventListener('click',()=>window.print());
   document.querySelector('#fullbtn').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch(e){}});
   document.addEventListener('fullscreenchange',fit);
   show(Math.max(0,slides.findIndex(s=>'#'+s.id===location.hash)));fit();

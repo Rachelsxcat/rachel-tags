@@ -36,7 +36,9 @@
 - `voc-tag/index.html`：VOC标签体系介绍。
 - `voc-tag/VOC标签应用Demo.html`：VOC标签应用Demo。
 - `voc-tag/README.md`：VOC项目中文说明。上述两个VOC HTML页面同属一个项目，平级维护。
-- `geo-tag/index.html`：Listing&GEO优化Agent交互式HTML PPT。
+- `geo-tag/index.html`：Listing&GEO优化项目资料导航页。
+- `geo-tag/AWS 资料/index.html`：AWS ProServe Listing&GEO运营Agent方案。
+- `geo-tag/Media 资料/index.html`：原Listing&GEO优化Agent交互式HTML PPT。
 - `geo-tag/README.md`：GEO项目中文说明。GEO项目与VOC项目独立维护。
 - 已有项目保持原目录和原网址，不因新增其他项目而受到影响。
 
@@ -79,7 +81,9 @@
   - 导航首页：https://rachelsxcat.github.io/rachel-tags/
   - VOC标签体系介绍：https://rachelsxcat.github.io/rachel-tags/voc-tag/
   - VOC标签应用Demo：https://rachelsxcat.github.io/rachel-tags/voc-tag/VOC标签应用Demo.html
-  - GEO Agent PPT：https://rachelsxcat.github.io/rachel-tags/geo-tag/
+  - GEO项目导航：https://rachelsxcat.github.io/rachel-tags/geo-tag/
+  - AWS方案：https://rachelsxcat.github.io/rachel-tags/geo-tag/AWS%20%E8%B5%84%E6%96%99/
+  - Media Agent PPT：https://rachelsxcat.github.io/rachel-tags/geo-tag/Media%20%E8%B5%84%E6%96%99/
 - 修改已有项目后提供原项目的最新网页链接；新增项目后同时提供独立项目网址与导航首页网址。
 - 不主动调整已发布页面的访问地址；如浏览平台自动追加追踪参数，应说明该参数并非原始网址的一部分。
 
